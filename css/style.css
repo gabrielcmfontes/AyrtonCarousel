@@ -6,6 +6,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1000/676/desktop-wallpaper-monaco-gp-monaco-f1.jpg");
+    background-size: 210vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(10%) blur(2px);
 }
 
 .slider{
@@ -15,14 +21,14 @@ body{
     overflow: hidden;
 }
 
-div input{
-    
-}
-
 .images{
     width: 400%;
     height: 400px;
     display: flex;
+}
+
+input{
+    display: none;
 }
 
 .slide{
@@ -47,7 +53,7 @@ div input{
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
 }
 
 .manual-btn:not(:last-child){
@@ -55,14 +61,32 @@ div input{
 }
 
 .manual-btn:hover{
-    background-color: #ffff;
+    background-color: #1E90FF;
 }
 
-#radio1:checked ~ .img{
-    margin-left: 0;
+.navigation-auto div{
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
 }
 
-#radio2:checked ~ .img{
-    margin-left: -100;
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
 }
 
+.navigation-auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+#img{
+    transition: 1s;
+}
+
+#radio1:checked + div{
+    cursor: pointer;
+}
