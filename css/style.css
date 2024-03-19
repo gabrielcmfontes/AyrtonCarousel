@@ -8,7 +8,7 @@ body{
     align-items: center;
 
     background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1000/676/desktop-wallpaper-monaco-gp-monaco-f1.jpg");
-    background-size: 210vh;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     backdrop-filter: brightness(10%) blur(2px);
